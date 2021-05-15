@@ -26,13 +26,13 @@
     </item>
     
     <item>
-      <title>Post 1</title>
+      <title>The maiden post: the singular value decomposition</title>
       <link>http://oliverschwartz.github.io/posts/post1/</link>
       <pubDate>Thu, 13 May 2021 19:56:57 +1000</pubDate>
       
       <guid>http://oliverschwartz.github.io/posts/post1/</guid>
-      <description>Add some content here
-code</description>
+      <description>Singular value decomposition    Singular value decomposition (SVD) is perhaps the most interesting and fundamental theorem of linear algebra. Generally speaking, it says that any matrix can be factored into the product of three matrices with specific properties, one of which is a diagonal matrix. (In this post we will just assume our matrices are real-valued).
+Specifically, the SVD of a real matrix $A \in \mathbb{R}^{m \times n}$ can be written as the product of three matrices $U$, $\Sigma$, $V^T.</description>
     </item>
     
     <item>

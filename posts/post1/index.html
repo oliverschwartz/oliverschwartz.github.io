@@ -8,23 +8,23 @@
     <meta name="color-scheme" content="light dark">
 
     
-      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
 
     
 
     <meta name="author" content="Oliver Schwartz">
-    <meta name="description" content="Add some content here
-code">
+    <meta name="description" content="Singular value decomposition    Singular value decomposition (SVD) is perhaps the most interesting and fundamental theorem of linear algebra. Generally speaking, it says that any matrix can be factored into the product of three matrices with specific properties, one of which is a diagonal matrix. (In this post we will just assume our matrices are real-valued).
+Specifically, the SVD of a real matrix $A \in \mathbb{R}^{m \times n}$ can be written as the product of three matrices $U$, $\Sigma$, $V^T.">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Post 1"/>
-<meta name="twitter:description" content="Add some content here
-code"/>
+<meta name="twitter:title" content="The maiden post: the singular value decomposition"/>
+<meta name="twitter:description" content="Singular value decomposition    Singular value decomposition (SVD) is perhaps the most interesting and fundamental theorem of linear algebra. Generally speaking, it says that any matrix can be factored into the product of three matrices with specific properties, one of which is a diagonal matrix. (In this post we will just assume our matrices are real-valued).
+Specifically, the SVD of a real matrix $A \in \mathbb{R}^{m \times n}$ can be written as the product of three matrices $U$, $\Sigma$, $V^T."/>
 
-    <meta property="og:title" content="Post 1" />
-<meta property="og:description" content="Add some content here
-code" />
+    <meta property="og:title" content="The maiden post: the singular value decomposition" />
+<meta property="og:description" content="Singular value decomposition    Singular value decomposition (SVD) is perhaps the most interesting and fundamental theorem of linear algebra. Generally speaking, it says that any matrix can be factored into the product of three matrices with specific properties, one of which is a diagonal matrix. (In this post we will just assume our matrices are real-valued).
+Specifically, the SVD of a real matrix $A \in \mathbb{R}^{m \times n}$ can be written as the product of three matrices $U$, $\Sigma$, $V^T." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://oliverschwartz.github.io/posts/post1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-05-13T19:56:57&#43;10:00" />
@@ -33,7 +33,7 @@ code" />
 
 
     <title>
-  Post 1 · Oliver Schwartz
+  The maiden post: the singular value decomposition · Oliver Schwartz
 </title>
 
     
@@ -126,6 +126,13 @@ code" />
 </nav>
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
       <div class="content">
         
   <section class="container post">
@@ -134,7 +141,7 @@ code" />
         <div class="post-title">
           <h1 class="title">
             <a class="title-link" href="http://oliverschwartz.github.io/posts/post1/">
-              Post 1
+              The maiden post: the singular value decomposition
             </a>
           </h1>
         </div>
@@ -148,7 +155,7 @@ code" />
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              One-minute read
+              4-minute read
             </span>
           </div>
           
@@ -159,8 +166,77 @@ code" />
 
       <div>
         
-        <p>Add some content here</p>
-<p><code>code</code></p>
+        <h2 id="singular-value-decomposition">
+  Singular value decomposition
+  <a class="heading-link" href="#singular-value-decomposition">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Singular value decomposition (SVD) is perhaps the most interesting and fundamental theorem of linear algebra. Generally speaking, it says that any matrix can be factored into the product of three matrices with specific properties, one of which is a diagonal matrix. (In this post we will just assume our matrices are real-valued).</p>
+<p>Specifically, the SVD of a real matrix $A \in \mathbb{R}^{m \times n}$ can be written as the product of three matrices $U$, $\Sigma$, $V^T.$
+$$
+A = U \Sigma V^T
+$$
+where $U \in \mathbb{R}^{m\times m}$ and $V \in \mathbb{R}^{n \times n}$ are orthonormal matrices and $\Sigma \in \mathbb{R}^{m\times n}$ is a diagonal matrix.</p>
+<h2 id="diagonalization">
+  Diagonalization
+  <a class="heading-link" href="#diagonalization">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>To understand what this means geometrically, it is worth first considering the diagonalization of a matrix. The diagonalization is a factorization which rewrites a matrix as the product of three matrices, one of which is diagonal. Interestingly, a diagonalization gives you the eigenvalues and eigenvectors of a matrix.</p>
+<p>Now, suppose $A$ is real and symmetric. There is a theorem that says $A$ is orthonormally diagonalizable (though we will not prove it here) as $A = UDU^{-1}$ where $U$ contains the eigenvectors of $A$ as columns, and $D$ contains the eigenvalues along its main diagonal (with zeros everywhere else). Decomposing this equation, we see that $A$ is exactly equal to $U$ (its eigenvectors) times a diagonal matrix (which just scales these eigenvectors) times $U^{-1}$ (which just converts back to the standard basis). This is very curious: a real symmetric matrix can be expressed entirely by its eigenvectors and the scaling factors on these eigenvectors (the eigenvalues).</p>
+<h2 id="back-to-the-svd">
+  Back to the SVD
+  <a class="heading-link" href="#back-to-the-svd">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Let&rsquo;s go back to the SVD and see if any parallels arise. Consider some general $m \times n$ matrix $A$ and its SVD: $A = U \Sigma V^T$. Decomposing this equation, we can see that the linear transformation represented by $A$ can be expressed by:</p>
+<ul>
+<li>taking some basis vectors contained in $U$</li>
+<li>scaling these vectors using the diagonal matrix $\Sigma$</li>
+<li>converting these scaled $u_i$&rsquo;s into another basis (specifically, the columns in $V$)</li>
+</ul>
+<p>In some sense, the SVD is really a more general diagonalization. It tells us that any matrix can be represented by a scaling relationship from one basis to another.</p>
+<h2 id="a-simple-problem">
+  A simple problem
+  <a class="heading-link" href="#a-simple-problem">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>With all of this in mind, let&rsquo;s move on to a simple introductory problem related to the SVD. (Note: this problem is taken from an MIT course on financial mathematics).</p>
+<p><em><strong>Consider the SVD of some matrix. Prove whether the following statement is true or false: the number of non-zero diagonal entries of $\Sigma$ is equal to the rank of $A$</strong></em>.</p>
+<p>Consider the kernel of $A$, i.e. the span of vectors that satisfy $Av = 0$. If we left-multiply by $A^T$, we can see that $A^T A v = A^T \cdot 0 = 0$. Therefore, the kernel of $A^T A$ is identical to the kernel of $A$.</p>
+<p>By definition, the number of non-zero singular values of $A$ is the number of non-zero eigenvalues of $A^T A$. We can see this by considering $A^T A$:
+$$
+\begin{align*}
+A^T A &amp;= (U \Sigma V^T)^T U \Sigma V^T \newline
+&amp;= V \Sigma^T U^T U \Sigma V^T          \newline
+&amp;= V \Sigma^T \Sigma V^T \newline
+&amp;= V \Sigma^T \Sigma V^{-1} \quad\text{as $V$ is orthogonal}
+\end{align*}
+$$</p>
+<p>Hence, this is a diagonalization of $A^TA$ with eigenvalues equal to $\sigma_i^2$ and eigenvectors as the columns of $V$.</p>
+<p>Counting multiplicities, the number of non-zero eigenvalues of $A^TA$ is equal to $\text{rank}(A^TA)$ (this is trivial to see from the equation $Av = \lambda v$).</p>
+<p>Above, we showed that $\text{null}(A) = \text{null}(A^TA)$. By the rank nullity theorem:
+$$
+\begin{align*}
+\text{null}(A) + \text{rank}(A) &amp;= n \newline
+\text{rank}(A) &amp;= n - \text{null}(A) \newline
+&amp;= n - \text{null}(A^TA) \newline
+&amp;= n - (n - \text{rank}(A^TA)) \newline
+&amp;= \text{rank}(A^TA) \newline
+&amp;= \text{(the number of non-zero diagonal entries of $\Sigma$)}
+\end{align*}
+$$</p>
+<h2 id="postscript">
+  Postscript
+  <a class="heading-link" href="#postscript">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>It is surprisingly difficult to find a web framework that natively supports $\LaTeX$. On this site I am using the light-weight markdown-based framework called <strong><a href="https://gohugo.io/">Hugo</a></strong> along with a JavaScript renderer for $\LaTeX$ called <strong><a href="https://www.mathjax.org/">MathJax</a></strong>.</p>
 
       </div>
 
@@ -175,7 +251,23 @@ code" />
       </footer>
     </article>
 
-    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
   </section>
 
       </div>
