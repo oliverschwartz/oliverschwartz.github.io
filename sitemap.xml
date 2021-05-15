@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>http://oliverschwartz.github.io/en/sitemap.xml</loc>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>http://oliverschwartz.github.io/pt-br/sitemap.xml</loc>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://oliverschwartz.github.io/contact/</loc>
+    <lastmod>2021-05-13T20:07:29+10:00</lastmod>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/projects/</loc>
+    <lastmod>2021-05-13T20:07:05+10:00</lastmod>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/</loc>
+    <lastmod>2021-05-13T19:56:57+10:00</lastmod>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/posts/post1/</loc>
+    <lastmod>2021-05-13T19:56:57+10:00</lastmod>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/posts/</loc>
+    <lastmod>2021-05-13T19:56:57+10:00</lastmod>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/about/</loc>
+    <lastmod>2021-05-13T19:50:16+10:00</lastmod>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/authors/</loc>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/categories/</loc>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/series/</loc>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/tags/</loc>
+  </url>
+</urlset>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Oliver Schwartz</title>
+    <link>http://oliverschwartz.github.io/posts/</link>
+    <description>Recent content in Posts on Oliver Schwartz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 13 May 2021 19:56:57 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post 1</title>
+      <link>http://oliverschwartz.github.io/posts/post1/</link>
+      <pubDate>Thu, 13 May 2021 19:56:57 +1000</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/post1/</guid>
+      <description>Add some content here
+code</description>
+    </item>
+    
+  </channel>
+</rss>

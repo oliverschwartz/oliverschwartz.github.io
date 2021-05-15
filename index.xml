@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>johndoe</title>
+    <title>Oliver Schwartz</title>
     <link>http://oliverschwartz.github.io/</link>
-    <description>Recent content on johndoe</description>
+    <description>Recent content on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 13 May 2021 19:56:57 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://oliverschwartz.github.io/contact/</link>
+      <pubDate>Thu, 13 May 2021 20:07:29 +1000</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/contact/</guid>
+      <description>Feel free to email me at oliver(dot)p(dot)schwartz(at)gmail(dot)com</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://oliverschwartz.github.io/projects/</link>
+      <pubDate>Thu, 13 May 2021 20:07:05 +1000</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/projects/</guid>
+      <description>Multidimensional cointegration: signal generation and analysis on Eurodollar futures. Paper. Going Viral: A virally themed game built with Three.js and Cannon.js. Play here Prediction engine for the NBA All-Star fan vote: Ball-game, or social media game? Repository and white paper. Facial generation with CelebA data set: pattern searching in data. Code. Logistic regression on an artificial data set: predicting the tastiness of papayas. Code. Optimal stopping problem: derivation and simulation.</description>
+    </item>
+    
+    <item>
+      <title>Post 1</title>
+      <link>http://oliverschwartz.github.io/posts/post1/</link>
+      <pubDate>Thu, 13 May 2021 19:56:57 +1000</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/post1/</guid>
+      <description>Add some content here
+code</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://oliverschwartz.github.io/about/</link>
+      <pubDate>Thu, 13 May 2021 19:50:16 +1000</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/about/</guid>
+      <description>I am a software engineer and problem solver from Sydney, Australia.
+As an undergrad, I studied at Princeton University, majoring in computer science. I also rowed on the men&amp;rsquo;s heavyweight crew team. At Princeton, I won the Shapiro prize for academic excellence and the 1916 cup for the varsity athlete with highest academic standing. I was the president of Tau Beta Pi (the engineering honor society) and graduated Summa Cum Laude (3.</description>
+    </item>
+    
   </channel>
 </rss>
