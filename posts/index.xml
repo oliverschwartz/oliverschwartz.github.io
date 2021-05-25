@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 May 2021 10:16:00 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2021 11:10:00 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Memoryless distributions in practice</title>
+      <link>http://oliverschwartz.github.io/posts/teller/</link>
+      <pubDate>Tue, 25 May 2021 11:10:00 +1000</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/teller/</guid>
+      <description>I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.
+The problem: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i.</description>
+    </item>
+    
     <item>
       <title>A puzzle involving inverses</title>
       <link>http://oliverschwartz.github.io/posts/exp-puzzle/</link>
