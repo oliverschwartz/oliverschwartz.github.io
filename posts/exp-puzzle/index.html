@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Oliver Schwartz">
+    <meta name="description" content="Suppose we have the following two functions:
+ $y = a^x$ $x = a^y$  You are told that there is one intersection point. Find this intersection point and the corresponding value of $a$.
+Let&rsquo;s begin by rearranging the second function to get it in terms of $y$: $$ y = \log_a x = \frac{\ln x}{\ln a} $$
+Let&rsquo;s define another function, $f(x)$, do be the difference between these two functions: $ f(x) = a^x - \frac{\ln x}{\ln a}.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A puzzle involving inverses"/>
+<meta name="twitter:description" content="Suppose we have the following two functions:
+ $y = a^x$ $x = a^y$  You are told that there is one intersection point. Find this intersection point and the corresponding value of $a$.
+Let&rsquo;s begin by rearranging the second function to get it in terms of $y$: $$ y = \log_a x = \frac{\ln x}{\ln a} $$
+Let&rsquo;s define another function, $f(x)$, do be the difference between these two functions: $ f(x) = a^x - \frac{\ln x}{\ln a}."/>
+
+    <meta property="og:title" content="A puzzle involving inverses" />
+<meta property="og:description" content="Suppose we have the following two functions:
+ $y = a^x$ $x = a^y$  You are told that there is one intersection point. Find this intersection point and the corresponding value of $a$.
+Let&rsquo;s begin by rearranging the second function to get it in terms of $y$: $$ y = \log_a x = \frac{\ln x}{\ln a} $$
+Let&rsquo;s define another function, $f(x)$, do be the difference between these two functions: $ f(x) = a^x - \frac{\ln x}{\ln a}." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://oliverschwartz.github.io/posts/exp-puzzle/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-25T10:16:00&#43;10:00" />
+<meta property="article:modified_time" content="2021-05-25T10:16:00&#43;10:00" />
+
+
+
+    <title>
+  A puzzle involving inverses · Oliver Schwartz
+</title>
+
+    
+      <link rel="canonical" href="http://oliverschwartz.github.io/posts/exp-puzzle/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.93c41bf1e522f85ecda7355985f09000f71fc1d64dda9f74051b0fa06210e93f.css" integrity="sha256-k8Qb8eUi&#43;F7NpzVZhfCQAPcfwdZN2p90BRsPoGIQ6T8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.f37febc669ce189201c1918fac1948a254686c8d366a312c2d72b2bb71ad97d1.css" integrity="sha256-83/rxmnOGJIBwZGPrBlIolRobI02ajEsLXKyu3Gtl9E=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Oliver Schwartz
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://oliverschwartz.github.io/posts/exp-puzzle/">
+              A puzzle involving inverses
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-05-25T10:16:00&#43;10:00'>
+                May 25, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Suppose we have the following two functions:</p>
+<ul>
+<li>$y = a^x$</li>
+<li>$x = a^y$</li>
+</ul>
+<p>You are told that there is one intersection point. Find this intersection point and the corresponding value of $a$.</p>
+<p>Let&rsquo;s begin by rearranging the second function to get it in terms of $y$:
+$$
+y = \log_a x = \frac{\ln x}{\ln a}
+$$</p>
+<p>Let&rsquo;s define another function, $f(x)$, do be the difference between these two functions:
+$
+f(x) = a^x - \frac{\ln x}{\ln a}.
+$ We want to find the zeros of this function as this is where the two functions are equal.</p>
+<p>We will do the following to solve for the value of $a$:</p>
+<ul>
+<li>Obtain an equation by setting $f(x) = 0$.</li>
+<li>Obtain a second equation by setting $f'(x) = 0$. (We are told there is only one intersection point, and since $f(x)$ consists of the sum of two concave functions, it is concave itself. Therefore, the zero of $f(x)$ occurs when $f(x)$ is also tangent.)</li>
+</ul>
+<p>Omitting some of the algebra:
+$$
+\begin{align*}
+f'(x) &amp;= e^{x \ln a}\ln a - \frac{1}{x\ln a} = 0\newline
+a^x &amp;= \frac{1}{x(\ln a)^2}
+\end{align*}
+$$</p>
+<p>And for $f(x) = 0$:
+$$
+\begin{align*}
+a^x &amp;= \frac{\ln x}{\ln a}
+\end{align*}
+$$</p>
+<p>Taking the log of the expression from the derivative and doing some substitutions with the previous equation, we obtain something quadratic in $x$:
+$$
+x^2(\ln a)^2 + 2x \ln(\ln a) \ln a = 0
+$$</p>
+<p>Since there is only one intersection, we must solve for the value of $a$ such that the discriminant (the terms under the square root of the quadratic formula) is zero. We end up obtaining:
+$$
+\begin{align*}
+\Delta &amp;= (2 \ln(\ln a)\ln a)^2 - 4((\ln a)^2) = 0 \newline
+(\ln(\ln a))^2 &amp;= 1 \newline
+\ln(\ln a) &amp;= \pm 1
+\end{align*}
+$$</p>
+<p>This has two solutions, $a = e^{1/e}$ and $a = e^e$. However, only one of these solutions works ($a = e^{1/e}$) and the second is just extraneous (introduced through algebra). We can validate that this graphically.</p>
+<p>Substituting the value of $a$ into some of the equations above, we see the intersection occurs at $(e,e)$.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+        2021
+         Oliver Schwartz 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js" integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
