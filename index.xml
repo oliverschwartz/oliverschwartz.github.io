@@ -6,7 +6,17 @@
     <description>Recent content on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 May 2021 11:10:00 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 May 2021 19:46:57 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Properties of options</title>
+      <link>http://oliverschwartz.github.io/posts/no-arb/</link>
+      <pubDate>Sun, 30 May 2021 19:46:57 +1000</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/no-arb/</guid>
+      <description>Recently, I&amp;rsquo;ve been reading about mathematical finance and all the interesting problems therein. In doing so, I some interesting albeit simple framings of option properties.
+Options    An option is a derivative product which gives the holder the option (but not the obligation) to purchase some asset at a fixed price on a fixed date. (This is a European option - American options allow you to exercise the option on any preceding day.</description>
+    </item>
+    
     <item>
       <title>Memoryless distributions in practice</title>
       <link>http://oliverschwartz.github.io/posts/teller/</link>
