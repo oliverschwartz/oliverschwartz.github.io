@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Oliver Schwartz">
+    <meta name="description" content="I&rsquo;ve been reading a book written by Chris Allen on Haskell - Haskell Programming from First Principles. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&rsquo;s interfaces (at least, I find them more intuitive).">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Snake in Haskell"/>
+<meta name="twitter:description" content="I&rsquo;ve been reading a book written by Chris Allen on Haskell - Haskell Programming from First Principles. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&rsquo;s interfaces (at least, I find them more intuitive)."/>
+
+    <meta property="og:title" content="Snake in Haskell" />
+<meta property="og:description" content="I&rsquo;ve been reading a book written by Chris Allen on Haskell - Haskell Programming from First Principles. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&rsquo;s interfaces (at least, I find them more intuitive)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://oliverschwartz.github.io/posts/snake/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-25T16:10:57&#43;10:00" />
+<meta property="article:modified_time" content="2021-08-25T16:10:57&#43;10:00" />
+
+
+
+    <title>
+  Snake in Haskell · Oliver Schwartz
+</title>
+
+    
+      <link rel="canonical" href="http://oliverschwartz.github.io/posts/snake/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.93c41bf1e522f85ecda7355985f09000f71fc1d64dda9f74051b0fa06210e93f.css" integrity="sha256-k8Qb8eUi&#43;F7NpzVZhfCQAPcfwdZN2p90BRsPoGIQ6T8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.f37febc669ce189201c1918fac1948a254686c8d366a312c2d72b2bb71ad97d1.css" integrity="sha256-83/rxmnOGJIBwZGPrBlIolRobI02ajEsLXKyu3Gtl9E=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Oliver Schwartz
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://oliverschwartz.github.io/posts/snake/">
+              Snake in Haskell
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-08-25T16:10:57&#43;10:00'>
+                August 25, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>I&rsquo;ve been reading a book written by Chris Allen on Haskell - <em>Haskell Programming from First Principles</em>. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&rsquo;s interfaces (at least, I find them more intuitive). If object oriented programming is frustrating you, give Haskell a try.</p>
+<h2 id="the-game">
+  The game
+  <a class="heading-link" href="#the-game">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>I built snake in Haskell. It total, it was 247 lines of code, so relatively straightforward. The repo lives <a href="https://github.com/oliverschwartz/snake">here</a> - clone it and enjoy.</p>
+<p>Basically, one thread runs continually listening for input. Another thread runs a game loop, repeating every 0.3s (although you can modulate this parameter for a faster or a slower game). The <code>Snake.hs</code> module contains all of the functions that operate on the snake (these are pure functions - so no side effects). All side effects are contained within the <code>Main.hs</code> file. This was fun to build and surprisingly fun to play, as banal as snake may seem.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+        2021
+         Oliver Schwartz 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js" integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

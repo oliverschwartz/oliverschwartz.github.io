@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 May 2021 19:46:57 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Aug 2021 16:10:57 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snake in Haskell</title>
+      <link>http://oliverschwartz.github.io/posts/snake/</link>
+      <pubDate>Wed, 25 Aug 2021 16:10:57 +1000</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/snake/</guid>
+      <description>I&amp;rsquo;ve been reading a book written by Chris Allen on Haskell - Haskell Programming from First Principles. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&amp;rsquo;s interfaces (at least, I find them more intuitive).</description>
+    </item>
+    
     <item>
       <title>Properties of options</title>
       <link>http://oliverschwartz.github.io/posts/no-arb/</link>
