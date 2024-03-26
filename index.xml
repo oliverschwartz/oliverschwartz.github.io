@@ -6,7 +6,16 @@
     <description>Recent content on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Aug 2021 16:10:57 +1000</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Mar 2024 16:10:15 +0100</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://oliverschwartz.github.io/posts/cell_towers/</link>
+      <pubDate>Tue, 26 Mar 2024 16:10:15 +0100</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/cell_towers/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Snake in Haskell</title>
       <link>http://oliverschwartz.github.io/posts/snake/</link>
