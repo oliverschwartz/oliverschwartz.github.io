@@ -5,6 +5,16 @@
     <link>http://oliverschwartz.github.io/series/</link>
     <description>Recent content in Series on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://oliverschwartz.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Oct 2024 14:09:25 +0100</lastBuildDate><atom:link href="http://oliverschwartz.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lang</title>
+      <link>http://oliverschwartz.github.io/series/lang/</link>
+      <pubDate>Wed, 30 Oct 2024 14:09:25 +0100</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/series/lang/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
