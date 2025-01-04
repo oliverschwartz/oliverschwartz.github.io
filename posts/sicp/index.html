@@ -13,28 +13,28 @@
     
 
     <meta name="author" content="Oliver Schwartz">
-    <meta name="description" content="I&rsquo;ve been reading a book written by Chris Allen on Haskell - Haskell Programming from First Principles. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&rsquo;s interfaces (at least, I find them more intuitive).">
+    <meta name="description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) ">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Snake in Haskell"/>
-<meta name="twitter:description" content="I&rsquo;ve been reading a book written by Chris Allen on Haskell - Haskell Programming from First Principles. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&rsquo;s interfaces (at least, I find them more intuitive)."/>
+<meta name="twitter:title" content="Structure and interpretation of computer programs (SICP)"/>
+<meta name="twitter:description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) "/>
 
-    <meta property="og:title" content="Snake in Haskell" />
-<meta property="og:description" content="I&rsquo;ve been reading a book written by Chris Allen on Haskell - Haskell Programming from First Principles. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&rsquo;s interfaces (at least, I find them more intuitive)." />
+    <meta property="og:title" content="Structure and interpretation of computer programs (SICP)" />
+<meta property="og:description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://oliverschwartz.github.io/posts/snake/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-08-25T16:10:57&#43;10:00" />
-<meta property="article:modified_time" content="2021-08-25T16:10:57&#43;10:00" />
+<meta property="og:url" content="http://oliverschwartz.github.io/posts/sicp/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-01-03T16:39:29&#43;11:00" />
+<meta property="article:modified_time" content="2025-01-03T16:39:29&#43;11:00" />
 
 
 
     <title>
-  Snake in Haskell · Oliver Schwartz
+  Structure and interpretation of computer programs (SICP) · Oliver Schwartz
 </title>
 
     
-      <link rel="canonical" href="http://oliverschwartz.github.io/posts/snake/">
+      <link rel="canonical" href="http://oliverschwartz.github.io/posts/sicp/">
     
 
     <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -131,8 +131,8 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://oliverschwartz.github.io/posts/snake/">
-              Snake in Haskell
+            <a class="title-link" href="http://oliverschwartz.github.io/posts/sicp/">
+              Structure and interpretation of computer programs (SICP)
             </a>
           </h1>
         </div>
@@ -140,8 +140,8 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2021-08-25T16:10:57&#43;10:00'>
-                August 25, 2021
+              <time datetime='2025-01-03T16:39:29&#43;11:00'>
+                January 3, 2025
               </time>
             </span>
             <span class="reading-time">
@@ -157,16 +157,36 @@
 
       <div>
         
-        <p>I&rsquo;ve been reading a book written by Chris Allen on Haskell - <em>Haskell Programming from First Principles</em>. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&rsquo;s interfaces (at least, I find them more intuitive). If object oriented programming is frustrating you, give Haskell a try.</p>
-<h2 id="the-game">
-  The game
-  <a class="heading-link" href="#the-game">
+        <h3 id="first-scheme-computing-square-roots-with-newtons-method">
+  First scheme: computing square roots with Newton&rsquo;s method
+  <a class="heading-link" href="#first-scheme-computing-square-roots-with-newtons-method">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
-</h2>
-<p>I built snake in Haskell. It total, it was 247 lines of code, so relatively straightforward. The repo lives <a href="https://github.com/oliverschwartz/snake">here</a> - clone it and enjoy.</p>
-<p>Basically, one thread runs continually listening for input. Another thread runs a game loop, repeating every 0.3s (although you can modulate this parameter for a faster or a slower game). The <code>Snake.hs</code> module contains all of the functions that operate on the snake (these are pure functions - so no side effects). All side effects are contained within the <code>Main.hs</code> file. This was fun to build and surprisingly fun to play, as banal as snake may seem.</p>
+</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scheme" data-lang="scheme">(
+ <span style="font-weight:bold">define </span>(good-enough? guess x)
+ (&lt; (abs (- (square guess) x)) 0.001))
+(
+ <span style="font-weight:bold">define </span>(average x y)
+ (/ (+ x y) 2))
+(
+ <span style="font-weight:bold">define </span>(improve guess x)
+ (average guess (/ x guess)))
+(
+ <span style="font-weight:bold">define </span>(sqrt-iter guess x)
+  (<span style="font-weight:bold">if </span>(good-enough? guess x)
+    guess
+    (sqrt-iter (improve guess x)
+               x)))
 
+<span style="font-style:italic">; Or we can use block structure...</span>
+(<span style="font-weight:bold">define </span>(sqrt x)
+  (<span style="font-weight:bold">define </span>(returns-one x)
+    1)
+  (sqrt-iter (returns-one 500) x))
+
+
+</code></pre></div>
       </div>
 
 

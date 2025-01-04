@@ -6,7 +6,16 @@
     <description>Recent content on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Dec 2024 17:24:54 +1100</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Jan 2025 16:39:29 +1100</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Structure and interpretation of computer programs (SICP)</title>
+      <link>http://oliverschwartz.github.io/posts/sicp/</link>
+      <pubDate>Fri, 03 Jan 2025 16:39:29 +1100</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/sicp/</guid>
+      <description>First scheme: computing square roots with Newton&amp;rsquo;s method    ( define (good-enough? guess x) (&amp;lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (+ x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) </description>
+    </item>
+    
     <item>
       <title>Reading in 2025</title>
       <link>http://oliverschwartz.github.io/posts/reading_2025/</link>
