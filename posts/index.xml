@@ -13,7 +13,7 @@
       <pubDate>Fri, 03 Jan 2025 16:39:29 +1100</pubDate>
       
       <guid>http://oliverschwartz.github.io/posts/sicp/</guid>
-      <description>First scheme: computing square roots with Newton&amp;rsquo;s method    ( define (good-enough? guess x) (&amp;lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (+ x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) </description>
+      <description>First scheme: computing square roots with Newton&amp;rsquo;s method    ( define (good-enough? guess x) (&amp;lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (+ x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) ```scheme (define (f x) (+ x (let ((a 3) (b 4)) (+ a b))) ) (define (add_one y) ( (lambda (b) (+ b 1)) y )) (define (sqr x) ( (lambda (x) (* x x)) x )) </description>
     </item>
     
     <item>

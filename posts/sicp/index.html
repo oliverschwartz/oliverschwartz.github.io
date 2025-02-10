@@ -13,15 +13,15 @@
     
 
     <meta name="author" content="Oliver Schwartz">
-    <meta name="description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) ">
+    <meta name="description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) ```scheme (define (f x) (&#43; x (let ((a 3) (b 4)) (&#43; a b))) ) (define (add_one y) ( (lambda (b) (&#43; b 1)) y )) (define (sqr x) ( (lambda (x) (* x x)) x )) ">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Structure and interpretation of computer programs (SICP)"/>
-<meta name="twitter:description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) "/>
+<meta name="twitter:description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) ```scheme (define (f x) (&#43; x (let ((a 3) (b 4)) (&#43; a b))) ) (define (add_one y) ( (lambda (b) (&#43; b 1)) y )) (define (sqr x) ( (lambda (x) (* x x)) x )) "/>
 
     <meta property="og:title" content="Structure and interpretation of computer programs (SICP)" />
-<meta property="og:description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) " />
+<meta property="og:description" content="First scheme: computing square roots with Newton&rsquo;s method    ( define (good-enough? guess x) (&lt; (abs (- (square guess) x)) 0.001)) ( define (average x y) (/ (&#43; x y) 2)) ( define (improve guess x) (average guess (/ x guess))) ( define (sqrt-iter guess x) (if (good-enough? guess x) guess (sqrt-iter (improve guess x) x))) ; Or we can use block structure... (define (sqrt x) (define (returns-one x) 1) (sqrt-iter (returns-one 500) x)) ```scheme (define (f x) (&#43; x (let ((a 3) (b 4)) (&#43; a b))) ) (define (add_one y) ( (lambda (b) (&#43; b 1)) y )) (define (sqr x) ( (lambda (x) (* x x)) x )) " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://oliverschwartz.github.io/posts/sicp/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2025-01-03T16:39:29&#43;11:00" />
@@ -184,6 +184,26 @@
   (<span style="font-weight:bold">define </span>(returns-one x)
     1)
   (sqrt-iter (returns-one 500) x))
+
+
+
+
+
+
+```scheme
+(<span style="font-weight:bold">define </span>(f x)
+  (+ x (<span style="font-weight:bold">let </span>((a 3) (b 4)) (+ a b)))
+  )
+
+(<span style="font-weight:bold">define </span>(add_one y)
+  (
+   (<span style="font-weight:bold">lambda </span>(b) (+ b 1)) y
+))
+
+(<span style="font-weight:bold">define </span>(sqr x) (
+    (<span style="font-weight:bold">lambda </span>(x) (* x x)) x
+))
+
 
 
 </code></pre></div>
