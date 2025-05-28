@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Dec 2024 17:24:54 +1100</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 May 2025 20:25:13 +0200</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keeping your head above water</title>
+      <link>http://oliverschwartz.github.io/posts/head_above_water/</link>
+      <pubDate>Wed, 28 May 2025 20:25:13 +0200</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/head_above_water/</guid>
+      <description>Keeping your head above water, or, thriving as a developer.
+This post tries to distil what I have learnt about navigating a job as a computer programmer. I hope what I&amp;rsquo;ve learnt can be useful to at least someone out there, even if that&amp;rsquo;s just my future self.
+ channel incoming information into one place: this minimizes cognitive overhead when deciding what to work on  Software engineering involves interacting with a wide array of technologies.</description>
+    </item>
+    
     <item>
       <title>Reading in 2025</title>
       <link>http://oliverschwartz.github.io/posts/reading_2025/</link>
