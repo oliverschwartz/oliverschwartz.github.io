@@ -6,7 +6,16 @@
     <description>Recent content on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 May 2025 20:25:13 +0200</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 May 2025 08:16:24 +0200</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal finances</title>
+      <link>http://oliverschwartz.github.io/posts/finances/</link>
+      <pubDate>Sat, 31 May 2025 08:16:24 +0200</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/finances/</guid>
+      <description>I&amp;rsquo;ve ummed and ahhed about what is a good system to track personal finances. For the last three years, I&amp;rsquo;ve simply used a spreadsheet. I periodically upload my credit card statements as a CSV, categorize the items, and render this in various ways (think nice pie charts and bar graphs). But is this really useful? Sure, it gives me some nice pictures but does it give me any insights into my spending behaviour that actually change that spending behaviour?</description>
+    </item>
+    
     <item>
       <title>Keeping your head above water</title>
       <link>http://oliverschwartz.github.io/posts/head_above_water/</link>
@@ -26,7 +35,7 @@ This post tries to distil what I have learnt about navigating a job as a compute
       <guid>http://oliverschwartz.github.io/posts/reading_2025/</guid>
       <description>This post is my attempt to reduce my consumption of short-form media (podcasts, news articles, etc) by outlining specifically what I am reading.
 Key: books are either NS (not started), IP (in progress), A (abandoned), or C (complete).
-Non fiction     The power of habit [C] Narnie (lev, satnik, a carodenica) (CS Lewis) [C] People&amp;rsquo;s history of the USA [A] Hry o zivot (Suzanne Collins) [IP] Superintelligence [IP] The code book [IP] SPQR (Mary Beard) [NS] Murderbot Diaries [NS] How to take smart notes [NS] How to stop worrying and start living [NS] Brave New World [NS] Billion dollar whale [NS] Barbarians at the gate [NS] When genius failed [NS] Timeless way of building Jim Coplien books books on this list: https://teachyourselfcs.</description>
+Non fiction     The power of habit [C] Narnie (lev, satnik, a carodenica) (CS Lewis) [C] Superintelligence [C] The code book [C]  This was a highly entertaining and informative read.</description>
     </item>
     
     <item>

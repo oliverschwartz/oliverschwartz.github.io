@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://oliverschwartz.github.io/posts/head_above_water/</loc>
-    <lastmod>2025-05-28T20:25:13+02:00</lastmod>
-  </url><url>
     <loc>http://oliverschwartz.github.io/</loc>
-    <lastmod>2025-05-28T20:25:13+02:00</lastmod>
+    <lastmod>2025-05-31T08:16:24+02:00</lastmod>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/posts/finances/</loc>
+    <lastmod>2025-05-31T08:16:24+02:00</lastmod>
   </url><url>
     <loc>http://oliverschwartz.github.io/posts/</loc>
+    <lastmod>2025-05-31T08:16:24+02:00</lastmod>
+  </url><url>
+    <loc>http://oliverschwartz.github.io/posts/head_above_water/</loc>
     <lastmod>2025-05-28T20:25:13+02:00</lastmod>
   </url><url>
     <loc>http://oliverschwartz.github.io/posts/reading_2025/</loc>
