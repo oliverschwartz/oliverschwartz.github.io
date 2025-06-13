@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Oliver Schwartz">
+    <meta name="description" content="Home extensions
+You should write your code like you build home extensions. If you don’t build home extensions, then at least imagine how you might build a home extension. (if you don’t do either regularly, then you’re reading the wrong post.)
+[Giving credit where it is due: one of my experienced colleagues articulated a flavour of this metaphor to me and I wanted to develop the metaphor to inform my own thinking about software.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Home extensions"/>
+<meta name="twitter:description" content="Home extensions
+You should write your code like you build home extensions. If you don’t build home extensions, then at least imagine how you might build a home extension. (if you don’t do either regularly, then you’re reading the wrong post.)
+[Giving credit where it is due: one of my experienced colleagues articulated a flavour of this metaphor to me and I wanted to develop the metaphor to inform my own thinking about software."/>
+
+    <meta property="og:title" content="Home extensions" />
+<meta property="og:description" content="Home extensions
+You should write your code like you build home extensions. If you don’t build home extensions, then at least imagine how you might build a home extension. (if you don’t do either regularly, then you’re reading the wrong post.)
+[Giving credit where it is due: one of my experienced colleagues articulated a flavour of this metaphor to me and I wanted to develop the metaphor to inform my own thinking about software." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://oliverschwartz.github.io/posts/extensions/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-06-13T09:47:09&#43;02:00" />
+<meta property="article:modified_time" content="2025-06-13T09:47:09&#43;02:00" />
+
+
+
+    <title>
+  Home extensions · Oliver Schwartz
+</title>
+
+    
+      <link rel="canonical" href="http://oliverschwartz.github.io/posts/extensions/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.93c41bf1e522f85ecda7355985f09000f71fc1d64dda9f74051b0fa06210e93f.css" integrity="sha256-k8Qb8eUi&#43;F7NpzVZhfCQAPcfwdZN2p90BRsPoGIQ6T8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.f37febc669ce189201c1918fac1948a254686c8d366a312c2d72b2bb71ad97d1.css" integrity="sha256-83/rxmnOGJIBwZGPrBlIolRobI02ajEsLXKyu3Gtl9E=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.83.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Oliver Schwartz
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://oliverschwartz.github.io/posts/extensions/">
+              Home extensions
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2025-06-13T09:47:09&#43;02:00'>
+                June 13, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p><strong>Home extensions</strong></p>
+<p>You should write your code like you build home extensions. If you don’t build home extensions, then at least imagine how you might build a home extension. (if you don’t do either regularly, then you’re reading the wrong post.)</p>
+<p>[Giving credit where it is due: one of my experienced colleagues articulated a flavour of this metaphor to me and I wanted to develop the metaphor to inform my own thinking about software.]</p>
+<p>So why should you heed this instruction? Well, code should be written to be read, which means that just like a home extension, code should make sense. The code you write should not be an ugly appendage you sew onto some Frankensteinian module - don’t just bolt things on. New code should be a logical addition which fits with what’s already there, just like a home extension should fit seamlessly with the existing house. A tasteful home extension should be from the same materials, the same colour scheme, and follow the same geometry as the existing house. If you just tack on a demountable shed to a Victorian mansion, your neighbours will probably hate you. If you’re in the US, you might even get sued. Home extensions, like good code, should make sense.</p>
+<p>As a developer, you should exercise your creative license. Think how easily software can be edited - the home extension metaphor, while it&rsquo;s useful in thinking about coherence, does not capture software’s malleability. When refactoring code, developers can reshape what is already there so the new extension fits. Code is much more changeable than gyprock (or pick your favourite building material), which means existing code can be remolded so the final product is logically coherent. Nevertheless, the home extension metaphor is still a good guide: extensions should be minimally disruptive to what’s already there. Adding an extension to the back of the house to make the living room bigger shouldn’t make the kitchen and bathrooms unusable.</p>
+<p>An aside: the language of software development often mirrors language used in design and construction for good reason. Houses are built from the ground up in a series of layers: the foundations are put in first, then the walls, and so on. Relating decisions made in a code base to the physical construction of a building might be a useful exercise that could future-proof that code base.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2021 -
+        
+        2025
+         Oliver Schwartz 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js" integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

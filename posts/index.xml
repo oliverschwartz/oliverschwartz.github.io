@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Oliver Schwartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jun 2025 21:08:48 +0200</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Jun 2025 09:47:09 +0200</lastBuildDate><atom:link href="http://oliverschwartz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home extensions</title>
+      <link>http://oliverschwartz.github.io/posts/extensions/</link>
+      <pubDate>Fri, 13 Jun 2025 09:47:09 +0200</pubDate>
+      
+      <guid>http://oliverschwartz.github.io/posts/extensions/</guid>
+      <description>Home extensions
+You should write your code like you build home extensions. If you don’t build home extensions, then at least imagine how you might build a home extension. (if you don’t do either regularly, then you’re reading the wrong post.)
+[Giving credit where it is due: one of my experienced colleagues articulated a flavour of this metaphor to me and I wanted to develop the metaphor to inform my own thinking about software.</description>
+    </item>
+    
     <item>
       <title>On information</title>
       <link>http://oliverschwartz.github.io/posts/information/</link>
