@@ -2,64 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://oliverschwartz.github.io/posts/extensions/</loc>
-    <lastmod>2025-06-13T09:47:09+02:00</lastmod>
+    <loc>https://example.com/</loc>
   </url><url>
-    <loc>http://oliverschwartz.github.io/</loc>
-    <lastmod>2025-06-13T09:47:09+02:00</lastmod>
+    <loc>https://example.com/categories/</loc>
   </url><url>
-    <loc>http://oliverschwartz.github.io/posts/</loc>
-    <lastmod>2025-06-13T09:47:09+02:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/information/</loc>
-    <lastmod>2025-06-01T21:08:48+02:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/head_above_water/</loc>
-    <lastmod>2025-05-28T20:25:13+02:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/reading_2025/</loc>
-    <lastmod>2024-12-28T17:24:54+11:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/year_of_slovak/</loc>
-    <lastmod>2024-11-22T14:25:13+01:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/series/lang/</loc>
-    <lastmod>2024-10-30T14:09:25+01:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/learning_dutch/</loc>
-    <lastmod>2024-10-30T14:09:25+01:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/series/</loc>
-    <lastmod>2024-10-30T14:09:25+01:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/snake/</loc>
-    <lastmod>2021-08-25T16:10:57+10:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/no-arb/</loc>
-    <lastmod>2021-05-30T19:46:57+10:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/teller/</loc>
-    <lastmod>2021-05-25T11:10:00+10:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/exp-puzzle/</loc>
-    <lastmod>2021-05-25T10:16:00+10:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/contact/</loc>
-    <lastmod>2021-05-13T20:07:29+10:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/projects/</loc>
-    <lastmod>2021-05-13T20:07:05+10:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/posts/svd/</loc>
-    <lastmod>2021-05-13T19:56:57+10:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/about/</loc>
-    <lastmod>2021-05-13T19:50:16+10:00</lastmod>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/authors/</loc>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/categories/</loc>
-  </url><url>
-    <loc>http://oliverschwartz.github.io/tags/</loc>
+    <loc>https://example.com/tags/</loc>
   </url>
 </urlset>
