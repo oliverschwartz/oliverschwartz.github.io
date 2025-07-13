@@ -1,121 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="color-scheme" content="light dark">
-
-    
-      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
-
-    
-
-    <meta name="author" content="Oliver Schwartz">
-    <meta name="description" content="I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.
-The problem: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i.">
-    <meta name="keywords" content="blog,developer,personal">
-
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Memoryless distributions in practice"/>
-<meta name="twitter:description" content="I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.
-The problem: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i."/>
-
-    <meta property="og:title" content="Memoryless distributions in practice" />
-<meta property="og:description" content="I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.
-The problem: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://oliverschwartz.github.io/posts/teller/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-05-25T11:10:00&#43;10:00" />
-<meta property="article:modified_time" content="2021-05-25T11:10:00&#43;10:00" />
-
-
-
-    <title>
+<head>
+  <title>
   Memoryless distributions in practice · Oliver Schwartz
 </title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-    
-      <link rel="canonical" href="http://oliverschwartz.github.io/posts/teller/">
-    
 
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
-      
-      
-      <link rel="stylesheet" href="/css/coder.min.93c41bf1e522f85ecda7355985f09000f71fc1d64dda9f74051b0fa06210e93f.css" integrity="sha256-k8Qb8eUi&#43;F7NpzVZhfCQAPcfwdZN2p90BRsPoGIQ6T8=" crossorigin="anonymous" media="screen" />
-    
 
-    
+<meta name="author" content="Oliver Schwartz">
+<meta name="description" content="I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.
+The problem: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i.i.d. exponential random variables. What is the probability that you will be the last to leave among the four customers?">
+<meta name="keywords" content="blog,developer,personal">
 
-    
-      
-        
-        
-        <link rel="stylesheet" href="/css/coder-dark.min.f37febc669ce189201c1918fac1948a254686c8d366a312c2d72b2bb71ad97d1.css" integrity="sha256-83/rxmnOGJIBwZGPrBlIolRobI02ajEsLXKyu3Gtl9E=" crossorigin="anonymous" media="screen" />
-      
-    
 
-    
 
-    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Memoryless distributions in practice">
+  <meta name="twitter:description" content="I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.
+The problem: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i.i.d. exponential random variables. What is the probability that you will be the last to leave among the four customers?">
 
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+<meta property="og:url" content="http://oliverschwartz.github.io/posts/teller/">
+  <meta property="og:site_name" content="Oliver Schwartz">
+  <meta property="og:title" content="Memoryless distributions in practice">
+  <meta property="og:description" content="I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.
+The problem: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i.i.d. exponential random variables. What is the probability that you will be the last to leave among the four customers?">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-05-25T11:10:00+10:00">
+    <meta property="article:modified_time" content="2021-05-25T11:10:00+10:00">
 
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-    
 
-    <meta name="generator" content="Hugo 0.83.1" />
-  </head>
+
+<link rel="canonical" href="http://oliverschwartz.github.io/posts/teller/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
 
   
   
-    
+  <link rel="stylesheet" href="/css/coder.min.6445a802b9389c9660e1b07b724dcf5718b1065ed2d71b4eeaf981cc7cc5fc46.css" integrity="sha256-ZEWoArk4nJZg4bB7ck3PVxixBl7S1xtO6vmBzHzF/EY=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
   
-  <body class="preload-transitions colorscheme-auto"
-        onload=""
-  >
     
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
 
-    <main class="wrapper">
-      <nav class="navigation">
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/">
+    
+    <a class="navigation-title" href="http://oliverschwartz.github.io/">
       Oliver Schwartz
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
+              <a class="navigation-link " href="/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="/posts/">Blog</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/projects/">Projects</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/contact/">Contact</a>
+              <a class="navigation-link " href="/projects/">Projects</a>
             </li>
           
         
@@ -126,15 +134,8 @@ The problem: Suppose you are at a bank. You find that all three tellers are busy
 </nav>
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-
-
-
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
@@ -148,13 +149,13 @@ The problem: Suppose you are at a bank. You find that all three tellers are busy
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2021-05-25T11:10:00&#43;10:00'>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2021-05-25T11:10:00&#43;10:00">
                 May 25, 2021
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               2-minute read
             </span>
           </div>
@@ -164,7 +165,7 @@ The problem: Suppose you are at a bank. You find that all three tellers are busy
         </div>
       </header>
 
-      <div>
+      <div class="post-content">
         
         <p>I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.</p>
 <p><strong>The problem</strong>: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i.i.d. exponential random variables. What is the probability that you will be the last to leave among the four customers?</p>
@@ -185,75 +186,95 @@ $$</p>
         
         
         
+        
+        
+        
+        
       </footer>
     </article>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
   
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ['$', '$'], ['\\(', '\\)']
-        ],
-        processEscapes: true,
-        processEnvironments: true
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
       }
-    };
-  </script>
+    );"></script>
   </section>
 
-      </div>
+    </div>
 
-      
-  <footer class="footer">
-    <section class="container">
-      
-      
-        ©
-        
-          2021 -
-        
-        2025
-         Oliver Schwartz 
-      
-      
-         · 
-        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-      
-      
-        
-      
-    </section>
-  </footer>
-
-
-    </main>
-
+    <footer class="footer">
+  <section class="container">
+    ©
     
-      
-      <script src="/js/coder.min.235666b114443867d43eeb5799d51f6252965e5163f338285e113fa381d3d27e.js" integrity="sha256-I1ZmsRREOGfUPutXmdUfYlKWXlFj8zgoXhE/o4HT0n4="></script>
+      2019 -
     
-
+    2025
+     Oliver Schwartz 
+    ·
     
-
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
+  </section>
+</footer>
 
-    
+  </main>
 
-    
+  
 
-    
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
 
-    
+  
 
-    
+  
 
-    
-  </body>
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
 </html>

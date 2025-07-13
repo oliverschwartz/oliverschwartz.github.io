@@ -4,7 +4,8 @@
     <title>Authors on Oliver Schwartz</title>
     <link>http://oliverschwartz.github.io/authors/</link>
     <description>Recent content in Authors on Oliver Schwartz</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://oliverschwartz.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://oliverschwartz.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

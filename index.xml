@@ -4,148 +4,107 @@
     <title>Oliver Schwartz</title>
     <link>http://oliverschwartz.github.io/</link>
     <description>Recent content on Oliver Schwartz</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 09:47:09 +0200</lastBuildDate><atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Jul 2025 10:04:05 -0500</lastBuildDate>
+    <atom:link href="http://oliverschwartz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The physics of wind instruments</title>
+      <link>http://oliverschwartz.github.io/posts/music/</link>
+      <pubDate>Sun, 13 Jul 2025 10:04:05 -0500</pubDate>
+      <guid>http://oliverschwartz.github.io/posts/music/</guid>
+      <description>&lt;p&gt;The next time you play a musical instrument, spend a few minutes trying to understand its physics. After recently buying a trombone, I did just this and was surprised to find myself exploring various rabbit holes to understand just how the instrument works.&lt;/p&gt;&#xA;&lt;p&gt;Since lots of today’s music is produced and consumed electronically, it’s easy to forget that humans used to make melodies with all sorts of oddly shaped things called instruments. These come in all sorts of shapes and sizes: woodwind, brass, percussion. Trying to understand why these instruments were constructed the way they were, reveals much about the fundamental physics behind sound.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Home extensions</title>
       <link>http://oliverschwartz.github.io/posts/extensions/</link>
       <pubDate>Fri, 13 Jun 2025 09:47:09 +0200</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/extensions/</guid>
-      <description>Home extensions
-You should write your code like you build home extensions. If you don’t build home extensions, then at least imagine how you might build a home extension. (if you don’t do either regularly, then you’re reading the wrong post.)
-[Giving credit where it is due: one of my experienced colleagues articulated a flavour of this metaphor to me and I wanted to develop the metaphor to inform my own thinking about software.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Home extensions&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;You should write your code like you build home extensions. If you don’t build home extensions, then at least imagine how you might build a home extension. (if you don’t do either regularly, then you’re reading the wrong post.)&lt;/p&gt;&#xA;&lt;p&gt;[Giving credit where it is due: one of my experienced colleagues articulated a flavour of this metaphor to me and I wanted to develop the metaphor to inform my own thinking about software.]&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>On information</title>
       <link>http://oliverschwartz.github.io/posts/information/</link>
       <pubDate>Sun, 01 Jun 2025 21:08:48 +0200</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/information/</guid>
-      <description>I read a recent blog post mourning the loss of curation (of film, TV, music, books) as a practice. I read this post and began to reflect on the ways I engage with media, and in particular, how I often feel inundated by information. There are just so many books to read, shows to watch, articles to read, podcasts to listen to. Sometimes the choice can be paralyzing: do you ever listen to something for a few minutes, only to reconsider the opportunity cost of that listening, switch to something else of higher &amp;lsquo;quality&amp;rsquo; (define that for yourself), only to say &amp;ldquo;to hell with it&amp;rdquo; and put on some music instead?</description>
+      <description>&lt;p&gt;I read a recent &lt;a href=&#34;https://tadaima.bearblog.dev/if-nothing-is-curated-how-do-we-find-things/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blog post&lt;/a&gt; mourning the loss of curation (of film, TV, music, books) as a practice. I read this post and began to reflect on the ways I engage with media, and in particular, how I often feel inundated by information. There are just so many books to read, shows to watch, articles to read, podcasts to listen to. Sometimes the choice can be paralyzing: do you ever listen to something for a few minutes, only to reconsider the opportunity cost of that listening, switch to something else of higher &amp;lsquo;quality&amp;rsquo; (define that for yourself), only to say &amp;ldquo;to hell with it&amp;rdquo; and put on some music instead? I&amp;rsquo;m not convinced this problem would &lt;em&gt;really&lt;/em&gt; go away if there was a resurgence in curation and criticism of art and media, given how much media we humans generate. Taking &lt;a href=&#34;https://www.wipo.int/en/web/global-innovation-index/w/blogs/2025/global-film-production&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;movie production&lt;/a&gt; as a proxy for all media, it seems like the rate at which we are producing content continues to increase. (I wouldn&amp;rsquo;t be surprised if the second derivative is positive, too.)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Keeping your head above water</title>
       <link>http://oliverschwartz.github.io/posts/head_above_water/</link>
       <pubDate>Wed, 28 May 2025 20:25:13 +0200</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/head_above_water/</guid>
-      <description>Keeping your head above water, or, thriving as a developer.
-This post tries to distil what I have learnt about navigating a job as a computer programmer. I hope what I&amp;rsquo;ve learnt can be useful to at least someone out there, even if that&amp;rsquo;s just my future self.
- channel incoming information into one place: this minimizes cognitive overhead when deciding what to work on  Software engineering involves interacting with a wide array of technologies.</description>
+      <description>&lt;p&gt;&lt;em&gt;Keeping your head above water, or, thriving as a developer&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This post tries to distil what I have learnt about navigating a job as a computer programmer. I hope what I&amp;rsquo;ve learnt can be useful to at least someone out there, even if that&amp;rsquo;s just my future self.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;channel incoming information into one place: this minimizes cognitive overhead when deciding what to work on&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Software engineering involves interacting with a wide array of technologies. Typically, this includes: several codebases, project tracking software, a code review platform, continuous integration, and communication software (slack, email, meets, calendar). Each of these platforms comes with its own set of notifications. Try to configure these platforms to avoid notification duplication (you don&amp;rsquo;t want to see that someone added you as a reviewer twice). Where possible, use automation to centralize the information to which you need to pay attention.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Reading in 2025</title>
       <link>http://oliverschwartz.github.io/posts/reading_2025/</link>
       <pubDate>Sat, 28 Dec 2024 17:24:54 +1100</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/reading_2025/</guid>
-      <description>This post is my attempt to reduce my consumption of short-form media by outlining specifically what I am reading.
-Books are either NS (not started), IP (in progress), A (abandoned), or C (complete).
-Non fiction     Narnie (lev, satnik, a carodenica) (CS Lewis) [C] Superintelligence [C]  Quite an academic text. Given it was published in 2014 and how rapidly AI seems to move, I didn&amp;rsquo;t find the book to be dated at all.</description>
+      <description>&lt;p&gt;This post is my attempt to reduce my consumption of short-form media by outlining &lt;em&gt;specifically&lt;/em&gt; what I am reading.&lt;/p&gt;&#xA;&lt;p&gt;Books are either NS (not started), IP (in progress), A (abandoned), or C (complete).&lt;/p&gt;&#xA;&lt;h1 id=&#34;non-fiction&#34;&gt;&#xA;  Non fiction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#non-fiction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Narnie (lev, satnik, a carodenica) (CS Lewis) [C]&lt;/li&gt;&#xA;&lt;li&gt;Superintelligence [C]&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Quite an academic text. Given it was published in 2014 and how rapidly AI seems to move, I didn&amp;rsquo;t find the book to be dated at all. There were many interesting ideas in here. Most of the arguments were not premised on AI looking a particular way or taking a particular form, but were quite general. My general takeaway was that the existential risk posed by AI is not vastly overlooked, and the problem should be treated in a similar fashion as the problem of nuclear weapons. One interesting focus of the early part of the book was predicting the form of a &amp;rsquo;takeoff&amp;rsquo;: how rapidly AI may radically change human life.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;The code book [C]&#xA;&lt;ul&gt;&#xA;&lt;li&gt;This was a highly entertaining and informative read. There was sufficient technical explanation of topics like asymmetric cryptography that I felt like I was reading a textbook, rather than something more pop-science-y. There was broad historical coverage, from ancient Greece to Mary Queen of Scots to quantum information. Alongside technical explanations were anecdotes about the various significant figures in cryptography: Alan Turing, the folks behind RSA, the various GCHQ employees who independently thought up many ideas in symmetric and asymmetric cryptography.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;American Kingpin [C]&#xA;&lt;ul&gt;&#xA;&lt;li&gt;An easy but entertaining read. It did a good job capturing the speed at which the Silk Road took off. The author didn&amp;rsquo;t lionize nor vilify Ross Ulbricht, but tried to present the evolution of the Silk Road as a natural progression of the ideologies which interested him during university. I was a little dissatisfied that there was no exploration of crypto laundering techniques.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;The power of habit [C] (garbage self help)&lt;/li&gt;&#xA;&lt;li&gt;Sentient [IP]&#xA;&lt;ul&gt;&#xA;&lt;li&gt;An eye opening read covering a broad spectrum of species of which I had never heard.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;People&amp;rsquo;s history of the USA [A]&lt;/li&gt;&#xA;&lt;li&gt;Hry o zivot (Suzanne Collins) [IP]&lt;/li&gt;&#xA;&lt;li&gt;SPQR (Mary Beard) [NS]&lt;/li&gt;&#xA;&lt;li&gt;Murderbot Diaries [NS]&lt;/li&gt;&#xA;&lt;li&gt;How to take smart notes [NS]&lt;/li&gt;&#xA;&lt;li&gt;Brave New World [NS]&lt;/li&gt;&#xA;&lt;li&gt;Billion dollar whale [NS]&lt;/li&gt;&#xA;&lt;li&gt;Barbarians at the gate [NS]&lt;/li&gt;&#xA;&lt;li&gt;When genius failed [NS]&lt;/li&gt;&#xA;&lt;li&gt;Timeless way of building&lt;/li&gt;&#xA;&lt;li&gt;Jim Coplien books&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;fiction&#34;&gt;&#xA;  Fiction&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#fiction&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Do androids dream of electric sheep? [C]&lt;/li&gt;&#xA;&lt;li&gt;Earthsea [C]&lt;/li&gt;&#xA;&lt;li&gt;Quicksilver [NS]&lt;/li&gt;&#xA;&lt;li&gt;Never let me go [IP]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;audio&#34;&gt;&#xA;  Audio&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#audio&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The simple path to wealth (JL Collins) [IP]&lt;/li&gt;&#xA;&lt;li&gt;How we learn: why brains learn better than any machine (Stanislas Dehaene) [IP]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;other&#34;&gt;&#xA;  Other&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#other&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Matt Levine&lt;/li&gt;&#xA;&lt;li&gt;The Atlantic&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Year of Slovak</title>
       <link>http://oliverschwartz.github.io/posts/year_of_slovak/</link>
       <pubDate>Fri, 22 Nov 2024 14:25:13 +0100</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/year_of_slovak/</guid>
-      <description>After putting 6 months of consistent (daily) effort into learning Dutch, I&amp;rsquo;ve decided to focus my attention on Slovak. Through learning Dutch, I have learned an incredible amount about how I can teach myself a language (as well as the Dutch itself, of course). My objective is to study 60 minutes every day for a year, and to assess myself along the way. I intend this post to serve as documentation for my progression.</description>
+      <description>&lt;p&gt;After putting 6 months of consistent (daily) effort into learning Dutch, I&amp;rsquo;ve decided to focus my attention on Slovak. Through learning Dutch, I have learned an incredible amount about how I can teach myself a language (as well as the Dutch itself, of course). My objective is to study 60 minutes every day for a year, and to assess myself along the way. I intend this post to serve as documentation for my progression. I would like to preserve this language in my family by speaking it to my children, but this requires a degree of fluency that I certainly do not have at the moment. Though, given I learnt this language during my critical period, I believe my intuition for the language is good enough to get me to the level where this is becomes possible.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Learning Dutch</title>
       <link>http://oliverschwartz.github.io/posts/learning_dutch/</link>
       <pubDate>Wed, 30 Oct 2024 14:09:25 +0100</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/learning_dutch/</guid>
-      <description>I&amp;rsquo;ll begin with some important information. I live in the Netherlands. As a result, I&amp;rsquo;ve been trying to learn Dutch. Learning a foreign language is a very interesting and rewarding experience which I highly recommend to others. To that end, the objective of this post is to collate some concrete ideas and practices to help motivated language students.
-The &amp;lsquo;meta&amp;rsquo; stuff    How should one think about learning a foreign language?</description>
+      <description>&lt;p&gt;I&amp;rsquo;ll begin with some important information. I live in the Netherlands. As a result, I&amp;rsquo;ve been trying to learn Dutch. Learning a foreign language is a very interesting and rewarding experience which I highly recommend to others. To that end, the objective of this post is to collate some concrete ideas and practices to help motivated language students.&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-meta-stuff&#34;&gt;&#xA;  The &amp;lsquo;meta&amp;rsquo; stuff&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-meta-stuff&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;How should one think about learning a foreign language? How do I learn how to learn?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Snake in Haskell</title>
       <link>http://oliverschwartz.github.io/posts/snake/</link>
       <pubDate>Wed, 25 Aug 2021 16:10:57 +1000</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/snake/</guid>
-      <description>I&amp;rsquo;ve been reading a book written by Chris Allen on Haskell - Haskell Programming from First Principles. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&amp;rsquo;s interfaces (at least, I find them more intuitive).</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been reading a book written by Chris Allen on Haskell - &lt;em&gt;Haskell Programming from First Principles&lt;/em&gt;. This is a fantastic book that I would recommend to anyone interested in functional programming. More and more I am learning to appreciate how wonderful functional programming can be. Strict typing makes a lot of simple bugs evaporate. The module structure of Haskell is also simple. Typeclasses are a far more elegant way of specifying behaviour than the convolutions of Java&amp;rsquo;s interfaces (at least, I find them more intuitive). If object oriented programming is frustrating you, give Haskell a try.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Properties of options</title>
       <link>http://oliverschwartz.github.io/posts/no-arb/</link>
       <pubDate>Sun, 30 May 2021 19:46:57 +1000</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/no-arb/</guid>
-      <description>Recently, I&amp;rsquo;ve been reading about mathematical finance and all the interesting problems therein. In doing so, I some interesting albeit simple framings of option properties.
-Options    An option is a derivative product which gives the holder the option (but not the obligation) to purchase some asset at a fixed price on a fixed date. (This is a European option - American options allow you to exercise the option on any preceding day.</description>
+      <description>&lt;p&gt;Recently, I&amp;rsquo;ve been reading about mathematical finance and all the interesting problems therein. In doing so, I some interesting albeit simple framings of option properties.&lt;/p&gt;&#xA;&lt;h2 id=&#34;options&#34;&gt;&#xA;  Options&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#options&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;An option is a derivative product which gives the holder the option (but not the obligation) to purchase some asset at a fixed price on a fixed date. (This is a European option - American options allow you to exercise the option on any preceding day.) There are two types of options: calls allow you to purchase the asset while puts allow you to sell.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Memoryless distributions in practice</title>
       <link>http://oliverschwartz.github.io/posts/teller/</link>
       <pubDate>Tue, 25 May 2021 11:10:00 +1000</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/teller/</guid>
-      <description>I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.
-The problem: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i.</description>
+      <description>&lt;p&gt;I came across this probability problem in an MIT course and I thought the solution was a good illustration of the memoryless property of some distributions.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The problem&lt;/strong&gt;: Suppose you are at a bank. You find that all three tellers are busy serving other customers, and there are no other customers in the queue. Assume that the service times for you and for each of the customers being served are i.i.d. exponential random variables. What is the probability that you will be the last to leave among the four customers?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A puzzle involving inverses</title>
       <link>http://oliverschwartz.github.io/posts/exp-puzzle/</link>
       <pubDate>Tue, 25 May 2021 10:16:00 +1000</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/exp-puzzle/</guid>
-      <description>Suppose we have the following two functions:
- $y = a^x$ $x = a^y$  You are told that there is one intersection point. Find this intersection point and the corresponding value of $a$.
-Let&amp;rsquo;s begin by rearranging the second function to get it in terms of $y$: $$ y = \log_a x = \frac{\ln x}{\ln a} $$
-Let&amp;rsquo;s define another function, $f(x)$, do be the difference between these two functions: $ f(x) = a^x - \frac{\ln x}{\ln a}.</description>
+      <description>&lt;p&gt;Suppose we have the following two functions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$y = a^x$&lt;/li&gt;&#xA;&lt;li&gt;$x = a^y$&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;You are told that there is one intersection point. Find this intersection point and the corresponding value of $a$.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s begin by rearranging the second function to get it in terms of $y$:&#xA;$$&#xA;y = \log_a x = \frac{\ln x}{\ln a}&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s define another function, $f(x)$, do be the difference between these two functions:&#xA;$&#xA;f(x) = a^x - \frac{\ln x}{\ln a}.&#xA;$ We want to find the zeros of this function as this is where the two functions are equal.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Contact</title>
       <link>http://oliverschwartz.github.io/contact/</link>
       <pubDate>Thu, 13 May 2021 20:07:29 +1000</pubDate>
-      
       <guid>http://oliverschwartz.github.io/contact/</guid>
-      <description>Feel free to email me at oliver(dot)p(dot)schwartz(at)gmail(dot)com</description>
+      <description>&lt;p&gt;Feel free to email me at &lt;em&gt;oliver(dot)p(dot)schwartz(at)gmail(dot)com&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Projects</title>
       <link>http://oliverschwartz.github.io/projects/</link>
       <pubDate>Thu, 13 May 2021 20:07:05 +1000</pubDate>
-      
       <guid>http://oliverschwartz.github.io/projects/</guid>
-      <description>Multidimensional cointegration: signal generation and analysis on Eurodollar futures. Paper. Going Viral: A virally themed game built with Three.js and Cannon.js. Play here Prediction engine for the NBA All-Star fan vote: Ball-game, or social media game? Repository and white paper. Facial generation with CelebA data set: pattern searching in data. Code. Logistic regression on an artificial data set: predicting the tastiness of papayas. Code. Optimal stopping problem: derivation and simulation.</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multidimensional cointegration&lt;/strong&gt;: signal generation and analysis on Eurodollar futures. &lt;a href=&#34;https://drive.google.com/file/d/1DQK9jOH25fqlhjTYacRYM3hYxMxZBDf9/view?usp=sharing&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Going Viral&lt;/strong&gt;: A virally themed game built with Three.js and Cannon.js. &lt;a href=&#34;https://oliverschwartz.github.io/going-viral&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Play here&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Prediction engine for the NBA All-Star fan vote&lt;/strong&gt;: Ball-game, or social media game? &lt;a href=&#34;https://github.com/oliverschwartz/social-media-or-ball-game&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Repository&lt;/a&gt; and &lt;a href=&#34;https://github.com/oliverschwartz/social-media-or-ball-game/blob/ce5184e47d60f98921b77adc29826d97038d20c5/Nicholas_Schwartz_Project.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;white paper&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Facial generation&lt;/strong&gt; with CelebA data set: pattern searching in data. &lt;a href=&#34;https://colab.research.google.com/drive/1OfDieSTEW-mVgsdGowPiIvDeboHNoJZq?usp=sharing&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Logistic regression&lt;/strong&gt; on an artificial data set: predicting the tastiness of papayas. &lt;a href=&#34;https://colab.research.google.com/drive/15US_nBHusZnrc9wUMv1trO-Av_ukCxpJ?usp=sharing&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Optimal stopping problem&lt;/strong&gt;: derivation and simulation. (Inspired by &lt;em&gt;Algorithms to Live By&lt;/em&gt; by Brian Christian and Tom Griffiths.) &lt;a href=&#34;https://colab.research.google.com/drive/1xDdMORxeSuSWDLcmOaVrdnqXmZL0CoG0?usp=sharing&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ordinary least squares&lt;/strong&gt; for regression tasks: geometric intuitions and applications. &lt;a href=&#34;https://colab.research.google.com/drive/1RwvBzSEvrofIvpDJT09pl1OfJc5AGOgx?usp=sharing&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Naive Bayes for classification&lt;/strong&gt;. &lt;a href=&#34;https://colab.research.google.com/drive/1THqsbb6G1-mmdbRl24WhJV13nH3gtGZL?usp=sharing&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Flower classification&lt;/strong&gt; with &lt;a href=&#34;https://colab.research.google.com/drive/1W93YP0tTTHUMvR3dYCdiF8YKI68eAD3X?usp=sharing&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;KNN&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;MeetUp&lt;/strong&gt;: a webapp for creating and scheduling activities. &lt;a href=&#34;https://github.com/oliverschwartz/meetup&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>The maiden post: the singular value decomposition</title>
       <link>http://oliverschwartz.github.io/posts/svd/</link>
       <pubDate>Thu, 13 May 2021 19:56:57 +1000</pubDate>
-      
       <guid>http://oliverschwartz.github.io/posts/svd/</guid>
-      <description>Singular value decomposition    Singular value decomposition (SVD) is perhaps the most interesting and fundamental theorem of linear algebra. Generally speaking, it says that any matrix can be factored into the product of three matrices with specific properties, one of which is a diagonal matrix. (In this post we will just assume our matrices are real-valued).
-Specifically, the SVD of a real matrix $A \in \mathbb{R}^{m \times n}$ can be written as the product of three matrices $U$, $\Sigma$, $V^T.</description>
+      <description>&lt;h2 id=&#34;singular-value-decomposition&#34;&gt;&#xA;  Singular value decomposition&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#singular-value-decomposition&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Singular value decomposition (SVD) is perhaps the most interesting and fundamental theorem of linear algebra. Generally speaking, it says that any matrix can be factored into the product of three matrices with specific properties, one of which is a diagonal matrix. (In this post we will just assume our matrices are real-valued).&lt;/p&gt;&#xA;&lt;p&gt;Specifically, the SVD of a real matrix $A \in \mathbb{R}^{m \times n}$ can be written as the product of three matrices $U$, $\Sigma$, $V^T.$&#xA;$$&#xA;A = U \Sigma V^T&#xA;$$&#xA;where $U \in \mathbb{R}^{m\times m}$ and $V \in \mathbb{R}^{n \times n}$ are orthonormal matrices and $\Sigma \in \mathbb{R}^{m\times n}$ is a diagonal matrix.&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://oliverschwartz.github.io/about/</link>
-      <pubDate>Thu, 13 May 2021 19:50:16 +1000</pubDate>
-      
-      <guid>http://oliverschwartz.github.io/about/</guid>
-      <description>I am a software engineer and problem solver from Sydney, Australia.
-As an undergrad, I studied at Princeton University, majoring in computer science. I also rowed on the men&amp;rsquo;s heavyweight crew team. At Princeton, I won the Shapiro prize for academic excellence and the 1916 cup for the varsity athlete with highest academic standing. I was the president of Tau Beta Pi (the engineering honor society) and graduated Summa Cum Laude (3.</description>
-    </item>
-    
   </channel>
 </rss>
